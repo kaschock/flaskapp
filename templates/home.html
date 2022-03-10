@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <!-- Starts image section -->
+    <div class="container">
+        <p><h2>Wer hat den Tweet geschrieben?</h2></p>
+   
+        <h3> Das Model im einsatz</h3>
+  
+    
+
+    
+    <!-- Starts form section -->
+    <div class="form-container ">
+        <form class="form-horizontal" action = "/predict/" method="post">
+        
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="text">Tweet-Inhalt:</label>
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="text" name="text">
+              </div>
+            </div>
+             
+            <label class="control-label">&nbsp;</label>                
+           
+                <button type="submit" class="btn btn-primary">Prüfen</button>
+          
+          </form>
+        <!-- Ends form section -->
+        
+        
+    </div>  </div>
+
+
+{% endblock %}
